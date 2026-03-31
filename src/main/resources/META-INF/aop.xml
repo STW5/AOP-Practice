@@ -1,0 +1,11 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <!-- 바이트코드를 조작할 대상 패키지 지정 -->
+    <weaver options="-verbose">
+        <include within="com.stw.aoppractice..*"/>
+    </weaver>
+    <!-- LTW로 적용할 Aspect 등록 -->
+    <aspects>
+        <aspect name="com.stw.aoppractice.aspect.LtwAspect"/>
+    </aspects>
+</aspectj>
